@@ -6,7 +6,7 @@ import plotly.express as px
 
 @st.cache_data
 def load_data(nrows):
-    df = pd.read_excel("data/Pondy_Analysis_New.xlsx")
+    df = pd.read_excel("data/Trichy_Analysis_New.xlsx")
     df = df.iloc[:nrows,1:]
     df = df[df["Status"]=="Success"]
     return df
